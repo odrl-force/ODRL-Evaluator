@@ -2,7 +2,7 @@ import type { Quad } from "@rdfjs/types";
 import { Store } from "n3";
 
 
-abstract class Validator<TIn = void, TOut = void> {
+export abstract class Validator<TIn = void, TOut = void> {
     /**
      * Returns a boolean result on whether the input was valid.
      * @param input input to be validated
