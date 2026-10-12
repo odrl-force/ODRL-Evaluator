@@ -701,7 +701,7 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
    ?targetReport a report:TargetReport .
 
    ?rule odrl:target ?resource .
-   ?evaluationRequest sotw:requestedTarget ?requestedResource .
+   ?evaluationRequest sotw:evaluatedTarget ?requestedResource .
 
    ?resource log:equalTo ?requestedResource .
 
@@ -735,7 +735,7 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
 
    ?assetCollection a odrl:AssetCollection.
 
-   ?evaluationRequest sotw:requestedTarget ?resourceInCollection .
+   ?evaluationRequest sotw:evaluatedTarget ?resourceInCollection .
 
    ?resourceInCollection odrl:partOf ?assetCollection .
 }
@@ -770,7 +770,7 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
    ?partyReport a report:PartyReport .
 
    ?permission odrl:assignee ?party .
-   ?evaluationRequest sotw:requestingParty ?requestedParty .
+   ?evaluationRequest sotw:evaluatedParty ?requestedParty .
 
    ?party log:equalTo ?requestedParty .
    
@@ -803,7 +803,7 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
 
    ?partyCollection a odrl:PartyCollection.
 
-   ?evaluationRequest sotw:requestingParty ?requestedParty .
+   ?evaluationRequest sotw:evaluatedParty ?requestedParty .
 
    ?requestedParty odrl:partOf ?partyCollection .
 }
@@ -838,9 +838,9 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
 
    ?actionReport a report:ActionReport .
    ?permission odrl:action ?action .
-   ?evaluationRequest sotw:requestedAction ?requestedAction .
+   ?evaluationRequest sotw:evaluatedAction ?evaluatedAction .
 
-   ?action log:equalTo ?requestedAction .
+   ?action log:equalTo ?evaluatedAction .
 }
 => 
 {
@@ -857,9 +857,9 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
       
    ?actionReport a report:ActionReport .
    ?permission odrl:action ?action .
-   ?evaluationRequest sotw:requestedAction ?requestedAction .
+   ?evaluationRequest sotw:evaluatedAction ?evaluatedAction .
 
-   ?requestedAction odrl:includedIn ?action .
+   ?evaluatedAction odrl:includedIn ?action .
 } => 
 {
    ?actionReport a report:ActionReport ;
@@ -875,9 +875,9 @@ export const RULES: string[] = [`@prefix : <http://example.org/> .
       
    ?actionReport a report:ActionReport .
    ?permission odrl:action ?action .
-   ?evaluationRequest sotw:requestedAction ?requestedAction .
+   ?evaluationRequest sotw:evaluatedAction ?evaluatedAction .
 
-   ?requestedAction skos:exactMatch ?action .
+   ?evaluatedAction skos:exactMatch ?action .
 } => 
 {
    ?actionReport a report:ActionReport ;

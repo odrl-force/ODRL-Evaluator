@@ -94,7 +94,7 @@
    ?targetReport a report:TargetReport .
 
    ?rule odrl:target ?resource .
-   ?evaluationRequest sotw:requestedTarget ?requestedResource .
+   ?evaluationRequest sotw:evaluatedTarget ?requestedResource .
 
    ?resource log:equalTo ?requestedResource .
 
@@ -128,7 +128,7 @@
 
    ?assetCollection a odrl:AssetCollection.
 
-   ?evaluationRequest sotw:requestedTarget ?resourceInCollection .
+   ?evaluationRequest sotw:evaluatedTarget ?resourceInCollection .
 
    ?resourceInCollection odrl:partOf ?assetCollection .
 }
@@ -163,7 +163,7 @@
    ?partyReport a report:PartyReport .
 
    ?permission odrl:assignee ?party .
-   ?evaluationRequest sotw:requestingParty ?requestedParty .
+   ?evaluationRequest sotw:evaluatedParty ?requestedParty .
 
    ?party log:equalTo ?requestedParty .
    
@@ -196,7 +196,7 @@
 
    ?partyCollection a odrl:PartyCollection.
 
-   ?evaluationRequest sotw:requestingParty ?requestedParty .
+   ?evaluationRequest sotw:evaluatedParty ?requestedParty .
 
    ?requestedParty odrl:partOf ?partyCollection .
 }
@@ -231,9 +231,9 @@
 
    ?actionReport a report:ActionReport .
    ?permission odrl:action ?action .
-   ?evaluationRequest sotw:requestedAction ?requestedAction .
+   ?evaluationRequest sotw:evaluatedAction ?evaluatedAction .
 
-   ?action log:equalTo ?requestedAction .
+   ?action log:equalTo ?evaluatedAction .
 }
 => 
 {
@@ -250,9 +250,9 @@
       
    ?actionReport a report:ActionReport .
    ?permission odrl:action ?action .
-   ?evaluationRequest sotw:requestedAction ?requestedAction .
+   ?evaluationRequest sotw:evaluatedAction ?evaluatedAction .
 
-   ?requestedAction odrl:includedIn ?action .
+   ?evaluatedAction odrl:includedIn ?action .
 } => 
 {
    ?actionReport a report:ActionReport ;
@@ -268,9 +268,9 @@
       
    ?actionReport a report:ActionReport .
    ?permission odrl:action ?action .
-   ?evaluationRequest sotw:requestedAction ?requestedAction .
+   ?evaluationRequest sotw:evaluatedAction ?evaluatedAction .
 
-   ?requestedAction skos:exactMatch ?action .
+   ?evaluatedAction skos:exactMatch ?action .
 } => 
 {
    ?actionReport a report:ActionReport ;

@@ -21548,9 +21548,9 @@ export const request_1 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21573,9 +21573,9 @@ export const request_2 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:bob ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:bob ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party BOB requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21598,9 +21598,9 @@ export const request_3 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:write ;
-  sotw:requestingParty ex:bob ;
-  sotw:requestedTarget ex:y ;
+  sotw:evaluatedAction odrl:write ;
+  sotw:evaluatedParty ex:bob ;
+  sotw:evaluatedTarget ex:y ;
   dct:description "Requesting Party BOB requests to WRITE resource Y." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21623,9 +21623,9 @@ export const request_4 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:4089cf37-8cb0-49e9-a5a4-022cc1b2b749> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:sell ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:sell ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to SELL resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21648,9 +21648,9 @@ export const request_5 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:b7306adc-3f51-4ed4-b9fb-1864c2f1bdc9> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:sell ;
-  sotw:requestingParty ex:bob ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:sell ;
+  sotw:evaluatedParty ex:bob ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party BOB requests to SELL resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21673,9 +21673,9 @@ export const request_6 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:y ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:y ;
   dct:description "Requesting Party Alice requests to READ resource Y." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21698,9 +21698,9 @@ export const request_7 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:5b323bdb-7b4d-4431-8548-de2d021b673d> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:write ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:write ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to WRITE resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21723,9 +21723,9 @@ export const request_8 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:df1566c9-a18b-444f-a1fa-98b976d411eb> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:bob ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:bob ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party BOB requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21748,9 +21748,9 @@ export const request_9 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:0da1b571-254b-4fa5-8e46-2e881dca5c5c> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21773,9 +21773,9 @@ export const request_10 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:fb95f8d3-8c5a-453f-9c3f-6870bb434f5d> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21798,9 +21798,9 @@ export const request_11 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:e8ea4309-f2f0-4a3c-9697-d69ea483afdd> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21823,9 +21823,9 @@ export const request_12 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:8c807a96-8332-426b-b1a3-8a881464e74e> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21848,9 +21848,9 @@ export const request_13 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:f544eea6-98e7-473f-b1bf-1127f34af6c8> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:write ;
-  sotw:requestingParty ex:bob ;
-  sotw:requestedTarget ex:y ;
+  sotw:evaluatedAction odrl:write ;
+  sotw:evaluatedParty ex:bob ;
+  sotw:evaluatedTarget ex:y ;
   dct:description "Requesting Party BOB requests to WRITE resource Y." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21873,9 +21873,9 @@ export const request_14 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:8a14c96a-8f45-45ef-a349-7aebf5eb4408> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21899,9 +21899,9 @@ export const request_15 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:ce9fc20e-7c79-474e-8afe-7605accccee8> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X for the purpose of Account Management." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21929,9 +21929,9 @@ export const request_16 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:480915ba-6784-4596-be02-34b35899d000> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "Requesting Party ALICE requests to READ resource X for the purpose of dpv:AccountManagement." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
@@ -21960,9 +21960,9 @@ export const request_17 = new BasicRepresentation(
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:7433f876-38e9-4e46-9a8e-12b1d4dda622> a sotw:EvaluationRequest ;
-  sotw:requestedAction odrl:read ;
-  sotw:requestingParty ex:alice ;
-  sotw:requestedTarget ex:x ;
+  sotw:evaluatedAction odrl:read ;
+  sotw:evaluatedParty ex:alice ;
+  sotw:evaluatedTarget ex:x ;
   dct:description "ALICE wants to READ resource X given the context of deliver channel podpro.dev/id." ;
   sotw:requestParameter [
     a sotw:RequestParameter ;
